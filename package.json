@@ -1,0 +1,14 @@
+{
+  "name": "jsprojects",
+  "version": "1.0.0",
+  "description": "morning-challenge-whitelist",
+  "main": "testus.js",
+  "scripts": {
+    "test": "mocha $1"
+  },
+  "author": "caroline",
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.9.0"
+  }
+}
