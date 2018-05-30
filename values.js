@@ -11,8 +11,13 @@ values({one: 1, two: 2, three: 3});
 */
 
 // Your code here!
-const values = () => {
+const values = (obj) => {
+  return obj.map(y => {
+    return y[x]
+  })
 }
+
+// values({one: 1, two: 2})
 
 // Check your solution by running these tests: mocha *this_filename*
 const assert = require('assert');
