@@ -1,4 +1,4 @@
-/*
+x/*
 Pluck
 A convenient version of what is perhaps the most common use-case for map:
 extracting a list of property values.
@@ -33,7 +33,8 @@ describe('Pluck', () => {
   it('handles edgecases', () => {
     assert.deepEqual(pluck([{'[object Object]': 1}], {}), [1]);
   })
-})
+})\\
+adrgaert
 
 /*
 var kvArray = [{key: 1, value: 10},
