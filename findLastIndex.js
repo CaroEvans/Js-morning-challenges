@@ -15,12 +15,14 @@ _.findLastIndex(users, {
 
 // Your code here!
 const findLastIndex = (haystack, needle) => {
-    // for (needle in haystack){
     for (i = haystack.length-1; i > 0; i--){
-        for (x in haystack ) {
-            if (haystack[x] === haystack[needle])
-                console.log('needle found in haystack')
-         }
+        for (obj in haystack){
+            for (key in obj){
+                if (obj.key === needle.key){
+                    console.log('needle found')
+                }
+            }
+        }
     }
 }
 
@@ -36,17 +38,17 @@ findLastIndex(objects,{a: 0});
 //{a: 0, b: 0} check if it has {a: 0}
 
 // Check your solution by running these tests: mocha *this_filename*
-// const assert = require('assert');
+const assert = require('assert');
 
-// describe('Find Last Index', () => {
-//   it('finds the last index', () => {
-//     const objects = [
-//       {a: 0, b: 0},
-//       {a: 1, b: 1},
-//       {a: 2, b: 2},
-//       {a: 0, b: 0}
-//     ];
-//     const result = findLastIndex(objects, {a: 0});
-//     assert.equal(result, 3);
-//   })
-// });
+describe('Find Last Index', () => {
+  it('finds the last index', () => {
+    const objects = [
+      {a: 0, b: 0},
+      {a: 1, b: 1},
+      {a: 2, b: 2},
+      {a: 0, b: 0}
+    ];
+    const result = findLastIndex(objects, {a: 0});
+    assert.equal(result, 3);
+  })
+});
